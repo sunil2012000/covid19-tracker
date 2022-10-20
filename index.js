@@ -29,6 +29,5 @@ function updateMap() {
         })
 }
 
-unpadeMap();
 let interval = 15000;
 setInterval(updateMap, interval); 
