@@ -1,6 +1,6 @@
 function updateMap() {
     console.log("Updating map with realtime data")
-    fetch("data.json")
+    fetch("./data.json")
         .then(response => response.json())
         .then(rsp => {
             // console.log(rsp.data)
@@ -29,5 +29,5 @@ function updateMap() {
         })
 }
 
-let interval = 2000;
+let interval = 15000;
 setInterval(updateMap, interval); 
