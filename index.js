@@ -1,6 +1,6 @@
 function updateMap() {
     console.log("Updating map with realtime data")
-    fetch("https://github.com/sunil2012000/covid19-tracker/blob/main/data.json")
+    fetch("/doc/data.json")
         .then(response => response.json())
         .then(rsp => {
             // console.log(rsp.data)
